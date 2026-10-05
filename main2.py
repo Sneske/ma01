@@ -11,7 +11,7 @@ for q in entries:
         writer = csv.writer(file)
         writer.writerow(["alertId", "machineId", "firstActivity", q]) 
         for i in data["alerts"]:
-            for ip in i["entities"][q]:
-                writer.writerow([i["alertId"], i["machineId"], i["firstActivity"], ip])
+            for x in i["entities"][q]:
+                writer.writerow([i["alertId"], i["machineId"], i["firstActivity"], x])
 
 
